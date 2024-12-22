@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "huthetutorialmod:manite_bar"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "huthetutorialmod:manite_nugget"
+  }
+}

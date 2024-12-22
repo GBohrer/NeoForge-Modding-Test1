@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "huthetutorialmod:item/manite"
+    "layer0": "huthetutorialmod:item/raw_experilite"
   }
 }

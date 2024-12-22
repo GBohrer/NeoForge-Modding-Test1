@@ -18,15 +18,25 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(HutheTutorialMod.MOD_ID);
 
-    public static final DeferredBlock<Block> EXPERILITE_BLOCK = registerBlock(
-            "experilite_block", () -> new Block(BlockBehaviour.Properties.of()
+    public static final DeferredBlock<Block> RAW_EXPERILITE_BLOCK = registerBlock(
+            "raw_experilite_block", () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f)
                     .requiresCorrectToolForDrops()
-                    .sound(SoundType.AMETHYST)));
+                    .sound(SoundType.WART_BLOCK)));
 
     public static final DeferredBlock<Block> EXPERILITE_ORE = registerBlock(
             "experilite_ore", () -> new DropExperienceBlock(UniformInt.of(1,5), BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.DRIPSTONE_BLOCK)));
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> DEEPSLATE_EXPERILITE_ORE = registerBlock(
+            "deepslate_experilite_ore", () -> new DropExperienceBlock(UniformInt.of(2,7), BlockBehaviour.Properties.of()
+                    .strength(5f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> MANITE_BLOCK = registerBlock(
+            "manite_block", () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(5f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
+
+
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

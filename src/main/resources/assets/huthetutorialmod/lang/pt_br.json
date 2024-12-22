@@ -1,0 +1,14 @@
+{
+  "creativetab.huthetutorialmod.manite_items": "Itens de manita",
+  "creativetab.huthetutorialmod.experilite_items": "Itens de experilita",
+
+  "item.huthetutorialmod.raw_experilite": "Experilita bruta",
+  "item.huthetutorialmod.manite_ingot": "Barra de manita",
+  "item.huthetutorialmod.manite_bar": "Lingote de manita",
+  "item.huthetutorialmod.manite_nugget": "Pepita de manita",
+
+  "block.huthetutorialmod.raw_experilite_block": "Bloco de experilita bruta",
+  "block.huthetutorialmod.experilite_ore": "Minério de experilita",
+  "block.huthetutorialmod.deepslate_experilite_ore": "Minério de experilita ardosiabissal",
+  "block.huthetutorialmod.manite_block": "Bloco de manita"
+}

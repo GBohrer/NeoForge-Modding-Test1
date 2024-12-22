@@ -1,7 +1,14 @@
 {
-  "item.huthetutorialmod.manite": "Manite",
-  "item.huthetutorialmod.experilite": "Experilite",
+  "creativetab.huthetutorialmod.manite_items": "Manite Items",
+  "creativetab.huthetutorialmod.experilite_items": "Experilite Items",
 
-  "block.huthetutorialmod.experilite_block": "Block of Experilite",
-  "block.huthetutorialmod.experilite_ore": "Experilite Ore"
+  "item.huthetutorialmod.raw_experilite": "Raw Experilite",
+  "item.huthetutorialmod.manite_ingot": "Manite Ingot",
+  "item.huthetutorialmod.manite_bar": "Manite Bar",
+  "item.huthetutorialmod.manite_nugget": "Manite Nugget",
+
+  "block.huthetutorialmod.raw_experilite_block": "Block of Raw Experilite",
+  "block.huthetutorialmod.experilite_ore": "Experilite Ore",
+  "block.huthetutorialmod.deepslate_experilite_ore": "Experilite Deepslate Ore",
+  "block.huthetutorialmod.manite_block": "Block of Manite"
 }

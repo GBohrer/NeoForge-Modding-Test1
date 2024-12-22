@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "huthetutorialmod:block/experilite_block"
+    "all": "huthetutorialmod:block/raw_experilite_block"
   }
 }

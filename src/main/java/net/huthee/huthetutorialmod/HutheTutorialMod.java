@@ -1,6 +1,7 @@
 package net.huthee.huthetutorialmod;
 
 import net.huthee.huthetutorialmod.block.ModBlocks;
+import net.huthee.huthetutorialmod.item.ModCreativeModeTabs;
 import net.huthee.huthetutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -37,6 +38,8 @@ public class HutheTutorialMod {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -53,13 +56,17 @@ public class HutheTutorialMod {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept((ModItems.EXPERILITE));
-            event.accept((ModItems.MANITE));
+            event.accept((ModItems.RAW_EXPERILITE));
+            event.accept((ModItems.MANITE_INGOT));
+            event.accept((ModItems.MANITE_BAR));
+            event.accept((ModItems.MANITE_NUGGET));
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept((ModBlocks.EXPERILITE_BLOCK));
+            event.accept((ModBlocks.RAW_EXPERILITE_BLOCK));
             event.accept((ModBlocks.EXPERILITE_ORE));
+            event.accept((ModBlocks.DEEPSLATE_EXPERILITE_ORE));
+            event.accept((ModBlocks.MANITE_BLOCK));
         }
     }
 
