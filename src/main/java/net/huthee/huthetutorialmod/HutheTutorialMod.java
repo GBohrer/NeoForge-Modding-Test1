@@ -1,5 +1,6 @@
 package net.huthee.huthetutorialmod;
 
+import net.huthee.huthetutorialmod.block.ModBlocks;
 import net.huthee.huthetutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -37,6 +38,7 @@ public class HutheTutorialMod {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -51,8 +53,13 @@ public class HutheTutorialMod {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept((ModItems.EXPERILITE));
             event.accept((ModItems.MANITE));
-            event.accept((ModItems.RAW_MANITE));
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept((ModBlocks.EXPERILITE_BLOCK));
+            event.accept((ModBlocks.EXPERILITE_ORE));
         }
     }
 

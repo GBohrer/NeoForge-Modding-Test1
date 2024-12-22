@@ -11,7 +11,7 @@ public class ModItems {
 
     public static final DeferredItem<Item> MANITE = ITEMS.register("manite",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> RAW_MANITE = ITEMS.register("raw_manite",
+    public static final DeferredItem<Item> EXPERILITE = ITEMS.register("experilite",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {

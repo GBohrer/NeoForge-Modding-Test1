@@ -1,4 +1,7 @@
 {
   "item.huthetutorialmod.manite": "Manite",
-  "item.huthetutorialmod.raw_manite": "Raw Manite"
+  "item.huthetutorialmod.experilite": "Experilite",
+
+  "block.huthetutorialmod.experilite_block": "Block of Experilite",
+  "block.huthetutorialmod.experilite_ore": "Experilite Ore"
 }
