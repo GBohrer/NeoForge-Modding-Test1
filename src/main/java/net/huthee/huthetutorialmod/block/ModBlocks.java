@@ -20,21 +20,27 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> RAW_EXPERILITE_BLOCK = registerBlock(
             "raw_experilite_block", () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(2f)
+                    .strength(5f,0f)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.WART_BLOCK)));
 
     public static final DeferredBlock<Block> EXPERILITE_ORE = registerBlock(
             "experilite_ore", () -> new DropExperienceBlock(UniformInt.of(1,5), BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.DEEPSLATE)));
 
     public static final DeferredBlock<Block> DEEPSLATE_EXPERILITE_ORE = registerBlock(
             "deepslate_experilite_ore", () -> new DropExperienceBlock(UniformInt.of(2,7), BlockBehaviour.Properties.of()
-                    .strength(5f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+                    .strength(5f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)));
 
     public static final DeferredBlock<Block> MANITE_BLOCK = registerBlock(
             "manite_block", () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(5f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
+                    .strength(20f,10f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.NETHERITE_BLOCK)));
 
 
 
