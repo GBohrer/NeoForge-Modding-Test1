@@ -26,7 +26,7 @@
                   }
                 }
               ],
-              "name": "huthetutorialmod:experilite_deepslate_ore"
+              "name": "huthetutorialmod:deepslate_experilite_ore"
             },
             {
               "type": "minecraft:item",
@@ -35,8 +35,8 @@
                   "add": false,
                   "count": {
                     "type": "minecraft:uniform",
-                    "max": 5.0,
-                    "min": 1.0
+                    "max": 2.0,
+                    "min": 0.0
                   },
                   "function": "minecraft:set_count"
                 },
@@ -57,5 +57,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "huthetutorialmod:blocks/experilite__deepslate_ore"
+  "random_sequence": "huthetutorialmod:blocks/deepslate_experilite_ore"
 }

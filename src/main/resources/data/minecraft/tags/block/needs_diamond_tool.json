@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "huthetutorialmod:deepslate_experilite_ore",
-    "huthetutorialmod:experilite_ore"
+    "huthetutorialmod:experilite_ore",
+    "huthetutorialmod:magic_block"
   ]
 }

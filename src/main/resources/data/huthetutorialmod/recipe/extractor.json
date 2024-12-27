@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "huthetutorialmod:manite_ingot"
+    },
+    "B": {
+      "item": "minecraft:stick"
+    },
+    "C": {
+      "item": "huthetutorialmod:raw_experilite"
+    }
+  },
+  "pattern": [
+    " A ",
+    " CA",
+    "B  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "huthetutorialmod:extractor"
+  }
+}

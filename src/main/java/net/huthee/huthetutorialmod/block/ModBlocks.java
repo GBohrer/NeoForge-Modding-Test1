@@ -1,6 +1,7 @@
 package net.huthee.huthetutorialmod.block;
 
 import net.huthee.huthetutorialmod.HutheTutorialMod;
+import net.huthee.huthetutorialmod.block.custom.MagicBlock;
 import net.huthee.huthetutorialmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -47,7 +48,12 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.NETHERITE_BLOCK)));
 
-
+    public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock(
+            "magic_block", () -> new MagicBlock(BlockBehaviour.Properties.of()
+                    .strength(3f, 3f)
+                    .ignitedByLava()
+                    .friction(0.5f)
+                    .requiresCorrectToolForDrops()));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

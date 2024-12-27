@@ -68,6 +68,7 @@ public class HutheTutorialMod {
             event.accept((ModBlocks.EXPERILITE_ORE_EMPTY));
             event.accept((ModBlocks.DEEPSLATE_EXPERILITE_ORE));
             event.accept((ModBlocks.MANITE_BLOCK));
+            event.accept((ModBlocks.MAGIC_BLOCK));
         }
 
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {

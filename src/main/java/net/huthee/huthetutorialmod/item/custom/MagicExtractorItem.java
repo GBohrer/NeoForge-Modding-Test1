@@ -11,11 +11,18 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.Map;
 import java.util.Objects;
 
 public class MagicExtractorItem extends Item {
+    private static final Map<Block, Block> EXTRACTOR_MAP =
+            Map.ofEntries(
+                    Map.entry(ModBlocks.EXPERILITE_ORE.get(), ModBlocks.EXPERILITE_ORE_EMPTY.get()),
+                    Map.entry(ModBlocks.DEEPSLATE_EXPERILITE_ORE.get(), ModBlocks.EXPERILITE_ORE_EMPTY.get())
+            );
 
     public MagicExtractorItem(Properties properties) { super(properties); }
 
@@ -25,8 +32,12 @@ public class MagicExtractorItem extends Item {
         Level level = context.getLevel();
         Block clickedBlock = level.getBlockState(context.getClickedPos()).getBlock();
 
-        if(clickedBlock.equals(ModBlocks.EXPERILITE_ORE.get()) || clickedBlock.equals(ModBlocks.DEEPSLATE_EXPERILITE_ORE.get())) {
+        if(EXTRACTOR_MAP.containsKey(clickedBlock)) {
             if(!level.isClientSide()) {
+                level.setBlockAndUpdate(context.getClickedPos(), EXTRACTOR_MAP.get(clickedBlock).defaultBlockState());
+
+                Objects.requireNonNull(context.getPlayer()).giveExperiencePoints(30);
+
                 context.getItemInHand().hurtAndBreak(2, ((ServerLevel) level), context.getPlayer(),
                         item -> Objects.requireNonNull(context.getPlayer()).onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
 
