@@ -32,11 +32,11 @@ public class MagicBlock extends Block {
 
     @Override
     public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
-        if(entity instanceof ItemEntity itemEntity) {
-            if(itemEntity.getItem().getItem() == Items.IRON_INGOT) {
+        if (entity instanceof ItemEntity itemEntity) {
+            if (itemEntity.getItem().getItem() == Items.IRON_INGOT) {
                 itemEntity.setItem(new ItemStack(ModItems.MANITE_INGOT.get(), itemEntity.getItem().getCount()));
 
-                level.playLocalSound(itemEntity, SoundEvents.BEACON_ACTIVATE, SoundSource.BLOCKS, 1f,4f);
+                level.playLocalSound(itemEntity, SoundEvents.BEACON_ACTIVATE, SoundSource.BLOCKS, 1f, 4f);
             }
         }
 

@@ -75,6 +75,11 @@ public class HutheTutorialMod {
             event.accept(ModItems.CHISEL);
             event.accept(ModItems.EXTRACTOR);
         }
+
+        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(ModItems.RADISH);
+            event.accept(ModItems.RADISH_DRINK);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

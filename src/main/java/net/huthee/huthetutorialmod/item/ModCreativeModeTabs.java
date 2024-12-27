@@ -29,6 +29,9 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.CHISEL);
                         output.accept(ModItems.EXTRACTOR);
+
+                        output.accept(ModItems.RADISH);
+                        output.accept(ModItems.RADISH_DRINK);
                     })
                     .build());
 

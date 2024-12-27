@@ -3,6 +3,7 @@ package net.huthee.huthetutorialmod.item;
 import net.huthee.huthetutorialmod.HutheTutorialMod;
 import net.huthee.huthetutorialmod.item.custom.ChiselItem;
 import net.huthee.huthetutorialmod.item.custom.MagicExtractorItem;
+import net.huthee.huthetutorialmod.item.custom.RadishDrinkItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -24,6 +25,10 @@ public class ModItems {
             () -> new ChiselItem(new Item.Properties().durability(1024)));
     public  static final DeferredItem<Item> EXTRACTOR = ITEMS.register("extractor",
             () -> new MagicExtractorItem(new Item.Properties().durability(1024)));
+    public  static final DeferredItem<Item> RADISH = ITEMS.register("radish",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.RADISH)));
+    public  static final DeferredItem<Item> RADISH_DRINK = ITEMS.register("radish_drink",
+            () -> new RadishDrinkItem(new Item.Properties().food(ModFoodProperties.RADISH_DRINK)));
 
 
     public static void register(IEventBus eventBus) {
