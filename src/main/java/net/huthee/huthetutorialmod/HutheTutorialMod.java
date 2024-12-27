@@ -55,6 +55,19 @@ public class HutheTutorialMod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept((ModBlocks.RAW_EXPERILITE_BLOCK));
+            event.accept((ModBlocks.MANITE_BLOCK));
+            event.accept((ModBlocks.MAGIC_BLOCK));
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept((ModBlocks.EXPERILITE_ORE));
+            event.accept((ModBlocks.EXPERILITE_ORE_EMPTY));
+            event.accept((ModBlocks.DEEPSLATE_EXPERILITE_ORE));
+            event.accept((ModBlocks.DEEPSLATE_EXPERILITE_ORE_EMPTY));
+        }
+
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept((ModItems.RAW_EXPERILITE));
             event.accept((ModItems.MANITE_INGOT));
@@ -62,15 +75,6 @@ public class HutheTutorialMod {
             event.accept((ModItems.MANITE_NUGGET));
             event.accept((ModItems.FROSTFIRE_COAL));
             event.accept((ModItems.STARLIGHT_ASH));
-        }
-
-        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept((ModBlocks.RAW_EXPERILITE_BLOCK));
-            event.accept((ModBlocks.EXPERILITE_ORE));
-            event.accept((ModBlocks.EXPERILITE_ORE_EMPTY));
-            event.accept((ModBlocks.DEEPSLATE_EXPERILITE_ORE));
-            event.accept((ModBlocks.MANITE_BLOCK));
-            event.accept((ModBlocks.MAGIC_BLOCK));
         }
 
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {

@@ -24,7 +24,6 @@ public class ModBlocks {
                     .strength(5f,0f)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.WART_BLOCK)));
-
     public static final DeferredBlock<Block> EXPERILITE_ORE = registerBlock(
             "experilite_ore", () -> new DropExperienceBlock(UniformInt.of(1,5), BlockBehaviour.Properties.of()
                     .strength(4f)
@@ -35,9 +34,13 @@ public class ModBlocks {
                     .strength(4f)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.STONE)));
-
     public static final DeferredBlock<Block> DEEPSLATE_EXPERILITE_ORE = registerBlock(
             "deepslate_experilite_ore", () -> new DropExperienceBlock(UniformInt.of(2,7), BlockBehaviour.Properties.of()
+                    .strength(5f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.DEEPSLATE)));
+    public static final DeferredBlock<Block> DEEPSLATE_EXPERILITE_ORE_EMPTY = registerBlock(
+            "deepslate_experilite_ore_empty", () -> new Block(BlockBehaviour.Properties.of()
                     .strength(5f)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.DEEPSLATE)));

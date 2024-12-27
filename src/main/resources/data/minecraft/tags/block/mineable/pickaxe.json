@@ -1,9 +1,10 @@
 {
   "replace": false,
   "values": [
-    "huthetutorialmod:deepslate_experilite_ore",
     "huthetutorialmod:experilite_ore",
     "huthetutorialmod:experilite_ore_empty",
+    "huthetutorialmod:deepslate_experilite_ore",
+    "huthetutorialmod:deepslate_experilite_ore_empty",
     "huthetutorialmod:manite_block",
     "huthetutorialmod:raw_experilite_block"
   ]

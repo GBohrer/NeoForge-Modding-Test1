@@ -26,7 +26,7 @@ public class MagicExtractorItem extends Item {
     private static final Map<Block, Block> EXTRACTOR_MAP =
             Map.ofEntries(
                     Map.entry(ModBlocks.EXPERILITE_ORE.get(), ModBlocks.EXPERILITE_ORE_EMPTY.get()),
-                    Map.entry(ModBlocks.DEEPSLATE_EXPERILITE_ORE.get(), ModBlocks.EXPERILITE_ORE_EMPTY.get())
+                    Map.entry(ModBlocks.DEEPSLATE_EXPERILITE_ORE.get(), ModBlocks.DEEPSLATE_EXPERILITE_ORE_EMPTY.get())
             );
 
     public MagicExtractorItem(Properties properties) { super(properties); }

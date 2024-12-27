@@ -26,6 +26,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.EXPERILITE_ORE);
                         output.accept(ModBlocks.EXPERILITE_ORE_EMPTY);
                         output.accept(ModBlocks.DEEPSLATE_EXPERILITE_ORE);
+                        output.accept(ModBlocks.DEEPSLATE_EXPERILITE_ORE_EMPTY);
                         output.accept(ModBlocks.RAW_EXPERILITE_BLOCK);
                         output.accept(ModBlocks.MAGIC_BLOCK);
 
