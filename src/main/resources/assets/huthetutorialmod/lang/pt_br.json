@@ -10,6 +10,9 @@
   "item.huthetutorialmod.radish": "Rabanete",
   "item.huthetutorialmod.radish_drink": "Suco de rabanete",
 
+  "item.huthetutorialmod.frostfire_coal": "Carvão de fogofrio",
+  "item.huthetutorialmod.starlight_ash": "Pó estelar",
+
   "block.huthetutorialmod.raw_experilite_block": "Bloco de experilita bruta",
   "block.huthetutorialmod.experilite_ore": "Minério de experilita",
   "block.huthetutorialmod.experilite_ore_empty": "Minério de experilita (vazio)",
@@ -18,5 +21,11 @@
   "block.huthetutorialmod.magic_block": "Bloco de magia",
 
   "item.huthetutorialmod.chisel" : "Chisel de manita",
-  "item.huthetutorialmod.extractor" : "Extrator"
+  "item.huthetutorialmod.extractor" : "Extrator",
+
+  "tooltip.huthetutorialmod.default": "Segure §2SHIFT§r para mais informações",
+  "tooltip.huthetutorialmod.raw_experilite": "§7§oUma orbe de experiência petrificada§r§r",
+  "tooltip.huthetutorialmod.magic_block": "§7§oTransmuta itens próximos§r§r",
+  "tooltip.huthetutorialmod.extractor": "§7§oExperilita a seu desejo!§r§r",
+  "tooltip.huthetutorialmod.radish_drink": "§7§oSweet dreams are made of this§r§r"
 }

@@ -1,0 +1,10 @@
+{
+  "values": {
+    "huthetutorialmod:frostfire_coal": {
+      "burn_time": 6400
+    },
+    "huthetutorialmod:starlight_ash": {
+      "burn_time": 12800
+    }
+  }
+}

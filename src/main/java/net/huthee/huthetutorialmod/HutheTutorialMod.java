@@ -60,6 +60,8 @@ public class HutheTutorialMod {
             event.accept((ModItems.MANITE_INGOT));
             event.accept((ModItems.MANITE_BAR));
             event.accept((ModItems.MANITE_NUGGET));
+            event.accept((ModItems.FROSTFIRE_COAL));
+            event.accept((ModItems.STARLIGHT_ASH));
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {

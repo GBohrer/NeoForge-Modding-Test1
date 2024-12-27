@@ -17,11 +17,18 @@ public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, HutheTutorialMod.MOD_ID);
 
-    public static final Supplier<CreativeModeTab> MANITE_ITEMS_TAB = CREATIVE_MODE_TAB.register(
-            "manite_items_tab", () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(ModItems.MANITE_INGOT.get()))
-                    .title(Component.translatable("creativetab.huthetutorialmod.manite_items"))
+    public static final Supplier<CreativeModeTab> HUTHE_MAGIC_TAB = CREATIVE_MODE_TAB.register(
+            "huthe_magic_tab", () -> CreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModItems.RAW_EXPERILITE.get()))
+                    .title(Component.translatable("creativetab.huthetutorialmod.huthe_magic"))
                     .displayItems((parameters, output) -> {
+                        output.accept(ModItems.RAW_EXPERILITE);
+                        output.accept(ModBlocks.EXPERILITE_ORE);
+                        output.accept(ModBlocks.EXPERILITE_ORE_EMPTY);
+                        output.accept(ModBlocks.DEEPSLATE_EXPERILITE_ORE);
+                        output.accept(ModBlocks.RAW_EXPERILITE_BLOCK);
+                        output.accept(ModBlocks.MAGIC_BLOCK);
+
                         output.accept(ModItems.MANITE_INGOT);
                         output.accept(ModItems.MANITE_BAR);
                         output.accept(ModItems.MANITE_NUGGET);
@@ -32,24 +39,11 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.RADISH);
                         output.accept(ModItems.RADISH_DRINK);
+
+                        output.accept(ModItems.FROSTFIRE_COAL);
+                        output.accept(ModItems.STARLIGHT_ASH);
                     })
                     .build());
-
-    public static final Supplier<CreativeModeTab> EXPERILITE_ITEMS_TAB = CREATIVE_MODE_TAB.register(
-            "experilite_items_tab", () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(ModItems.RAW_EXPERILITE.get()))
-                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(HutheTutorialMod.MOD_ID, "manite_items_tab"))
-                    .title(Component.translatable("creativetab.huthetutorialmod.experilite_items"))
-                    .displayItems((parameters, output) -> {
-                        output.accept(ModItems.RAW_EXPERILITE);
-                        output.accept(ModBlocks.RAW_EXPERILITE_BLOCK);
-                        output.accept(ModBlocks.EXPERILITE_ORE);
-                        output.accept(ModBlocks.EXPERILITE_ORE_EMPTY);
-                        output.accept(ModBlocks.DEEPSLATE_EXPERILITE_ORE);
-                        output.accept(ModBlocks.MAGIC_BLOCK);
-                    })
-                    .build());
-
 
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TAB.register(eventBus);
