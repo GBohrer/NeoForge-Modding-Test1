@@ -2,6 +2,7 @@ package net.huthee.huthetutorialmod.item;
 
 import net.huthee.huthetutorialmod.HutheTutorialMod;
 import net.huthee.huthetutorialmod.block.ModBlocks;
+import net.huthee.huthetutorialmod.item.custom.ChiselItem;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -24,7 +25,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.MANITE_INGOT);
                         output.accept(ModItems.MANITE_BAR);
                         output.accept(ModItems.MANITE_NUGGET);
-                        output.accept((ModBlocks.MANITE_BLOCK));
+                        output.accept(ModBlocks.MANITE_BLOCK);
+
+                        output.accept(ModItems.CHISEL);
+                        output.accept(ModItems.EXTRACTOR);
                     })
                     .build());
 
@@ -37,6 +41,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RAW_EXPERILITE);
                         output.accept(ModBlocks.RAW_EXPERILITE_BLOCK);
                         output.accept(ModBlocks.EXPERILITE_ORE);
+                        output.accept(ModBlocks.EXPERILITE_ORE_EMPTY);
                         output.accept(ModBlocks.DEEPSLATE_EXPERILITE_ORE);
                     })
                     .build());

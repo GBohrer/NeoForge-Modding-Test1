@@ -9,6 +9,10 @@
 
   "block.huthetutorialmod.raw_experilite_block": "Block of Raw Experilite",
   "block.huthetutorialmod.experilite_ore": "Experilite Ore",
+  "block.huthetutorialmod.experilite_ore_empty": "Experilite Ore (Empty)",
   "block.huthetutorialmod.deepslate_experilite_ore": "Experilite Deepslate Ore",
-  "block.huthetutorialmod.manite_block": "Block of Manite"
+  "block.huthetutorialmod.manite_block": "Block of Manite",
+
+  "item.huthetutorialmod.chisel" : "Manite Chisel",
+  "item.huthetutorialmod.extractor" : "Extractor"
 }

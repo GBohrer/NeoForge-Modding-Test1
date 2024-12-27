@@ -28,13 +28,18 @@ public class ModBlocks {
             "experilite_ore", () -> new DropExperienceBlock(UniformInt.of(1,5), BlockBehaviour.Properties.of()
                     .strength(4f)
                     .requiresCorrectToolForDrops()
-                    .sound(SoundType.DEEPSLATE)));
+                    .sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> EXPERILITE_ORE_EMPTY = registerBlock(
+            "experilite_ore_empty", () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)));
 
     public static final DeferredBlock<Block> DEEPSLATE_EXPERILITE_ORE = registerBlock(
             "deepslate_experilite_ore", () -> new DropExperienceBlock(UniformInt.of(2,7), BlockBehaviour.Properties.of()
                     .strength(5f)
                     .requiresCorrectToolForDrops()
-                    .sound(SoundType.STONE)));
+                    .sound(SoundType.DEEPSLATE)));
 
     public static final DeferredBlock<Block> MANITE_BLOCK = registerBlock(
             "manite_block", () -> new Block(BlockBehaviour.Properties.of()

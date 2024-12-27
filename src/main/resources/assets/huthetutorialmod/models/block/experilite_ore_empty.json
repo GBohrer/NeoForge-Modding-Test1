@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "huthetutorialmod:block/experilite_ore_empty"
+  }
+}

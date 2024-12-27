@@ -1,6 +1,8 @@
 package net.huthee.huthetutorialmod.item;
 
 import net.huthee.huthetutorialmod.HutheTutorialMod;
+import net.huthee.huthetutorialmod.item.custom.ChiselItem;
+import net.huthee.huthetutorialmod.item.custom.MagicExtractorItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -17,6 +19,12 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> MANITE_NUGGET = ITEMS.register("manite_nugget",
             () -> new Item(new Item.Properties()));
+
+    public  static final DeferredItem<Item> CHISEL = ITEMS.register("chisel",
+            () -> new ChiselItem(new Item.Properties().durability(1024)));
+    public  static final DeferredItem<Item> EXTRACTOR = ITEMS.register("extractor",
+            () -> new MagicExtractorItem(new Item.Properties().durability(1024)));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

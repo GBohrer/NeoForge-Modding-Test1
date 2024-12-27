@@ -9,6 +9,10 @@
 
   "block.huthetutorialmod.raw_experilite_block": "Bloco de experilita bruta",
   "block.huthetutorialmod.experilite_ore": "Minério de experilita",
+  "block.huthetutorialmod.experilite_ore_empty": "Minério de experilita (vazio)",
   "block.huthetutorialmod.deepslate_experilite_ore": "Minério de experilita ardosiabissal",
-  "block.huthetutorialmod.manite_block": "Bloco de manita"
+  "block.huthetutorialmod.manite_block": "Bloco de manita",
+
+  "item.huthetutorialmod.chisel" : "Chisel de manita",
+  "item.huthetutorialmod.extractor" : "Extrator"
 }
